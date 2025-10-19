@@ -10,7 +10,10 @@
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*js,*.jsx": "eslint . --fix"
   },
   "dependencies": {
     "@primer/octicons-react": "^19.19.0",
