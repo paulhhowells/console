@@ -15,18 +15,11 @@ export default function ConsoleInput ({ askQuestion }) {
 	return (
 		<div className="console__input">
 			<form onSubmit={handleSubmit}>
-				<input
-					type="text"
+				<textarea
 					value={question}
 					onChange={handleChange}
 				/>
 				<ConsoleSubmitButton />
-				{/* <button
-					type="submit"
-					aria-label="Send"
-				>
-					<PaperAirplaneIcon size={24} />
-				</button> */}
 			</form>
 		</div>
 	);
