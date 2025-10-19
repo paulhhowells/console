@@ -1,0 +1,31 @@
+.console__submit-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	color: #6b7280;
+	border-radius: 4px;
+	transition: background-color 0.2s, color 0.2s;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.console__submit-button:hover {
+	background-color: #f3f4f6;
+	color: #111827;
+}
+.console__submit-button:focus {
+	outline: 2px solid #3b82f6;
+	outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .console__submit-button {
+    color: #9ca3af;
+  }
+
+  .console__submit-button:hover {
+    background-color: #374151;
+    color: #f9fafb;
+  }
+}

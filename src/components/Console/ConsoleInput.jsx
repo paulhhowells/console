@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { PaperAirplaneIcon } from '@primer/octicons-react';
+import { ConsoleSubmitButton } from '../buttons/ConsoleSubmitButton';
 
 export default function ConsoleInput ({ askQuestion }) {
 	const [ question, setQuestion ] = useState('');
@@ -20,12 +20,13 @@ export default function ConsoleInput ({ askQuestion }) {
 					value={question}
 					onChange={handleChange}
 				/>
-				<button
+				<ConsoleSubmitButton />
+				{/* <button
 					type="submit"
 					aria-label="Send"
 				>
 					<PaperAirplaneIcon size={24} />
-				</button>
+				</button> */}
 			</form>
 		</div>
 	);
