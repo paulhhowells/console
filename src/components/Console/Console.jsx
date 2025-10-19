@@ -5,7 +5,7 @@ import { useQuestion } from '../../hooks/useQuestion';
 import ConsoleLog from './ConsoleLog';
 import ConsoleInput from './ConsoleInput';
 import Settings from '../Settings';
-import { SettingsCogButton } from '../SettingsCogButton/SettingsCogButton';
+import { SettingsCogButton } from '../buttons/SettingsCogButton';
 
 import './Console.css';
 
