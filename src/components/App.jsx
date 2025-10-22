@@ -4,6 +4,8 @@ import { Console } from './Console';
 import Settings from './Settings';
 import { SettingsCogButton } from './buttons/SettingsCogButton';
 
+import Bongo from './Bongo';
+
 export default function App () {
 	const [ isSettingsOpen, setIsSettingsOpen ] = useState(false);
 
@@ -15,6 +17,8 @@ export default function App () {
 			<SettingsCogButton onClick={openSettings} />
 			<Console />
 			<Settings isOpen={isSettingsOpen} onClose={closeSettings} />
+
+			<Bongo />
 		</>
 	);
 }
