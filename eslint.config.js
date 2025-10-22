@@ -7,6 +7,7 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import stylistic from '@stylistic/eslint-plugin';
 import pluginQuery from '@tanstack/eslint-plugin-query';
+import vitest from '@vitest/eslint-plugin';
 
 export default defineConfig([
 	globalIgnores([ 'dist' ]),
@@ -104,6 +105,15 @@ export default defineConfig([
 					'nonwords': false, // bar++    [-, +, --, ++, !, !!]
 				},
 			],
+		},
+	},
+	{
+		files: [ '**/*.test.{js,jsx}' ],
+		plugins: {
+			vitest,
+		},
+		rules: {
+			...vitest.configs.recommended.rules,
 		},
 	},
 ]);
